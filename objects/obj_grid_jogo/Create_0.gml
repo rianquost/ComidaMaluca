@@ -20,6 +20,7 @@ for (i = 1; i <= _linhas; i++)
 		var _chance = random_range(0, 1);
 		var _objeto_escolhido = choose(0, 1);
 		
+		//Doces
 		if (_chance <= 0.50)
 		{
 			if(_objeto_escolhido = 0)
@@ -31,6 +32,8 @@ for (i = 1; i <= _linhas; i++)
 				_objeto = obj_sorvete	
 			}
 		}
+		
+		//Salgados
 		else if (_chance > 0.50 and _chance <= 0.95)
 		{
 			if(_objeto_escolhido = 0)
@@ -42,6 +45,7 @@ for (i = 1; i <= _linhas; i++)
 				_objeto = obj_x_salada
 			}		
 		}
+		//Brócolis
 		else
 		{
 			_objeto = obj_brocolis;	
