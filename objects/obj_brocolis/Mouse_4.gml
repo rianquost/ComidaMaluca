@@ -1,3 +1,7 @@
+if(pressionado) {
+	exit;
+}
+
 if (sprite_index != spr_efeito_coleta) {
 	global.pontos += 5;	
 }
@@ -13,3 +17,5 @@ if(global.restart)
 {
 	game_restart();	
 }
+
+pressionado = true;
