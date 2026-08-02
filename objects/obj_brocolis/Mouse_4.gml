@@ -1,5 +1,10 @@
-global.pontos += 5;
-instance_destroy();
+if (sprite_index != spr_efeito_coleta) {
+	global.pontos += 5;	
+}
+sprite_index = spr_efeito_coleta;
+
+image_index = 0;
+image_speed = 1;
 
 if(global.restart)
 {

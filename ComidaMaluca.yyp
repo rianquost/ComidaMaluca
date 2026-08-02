@@ -51,6 +51,7 @@
     {"id":{"name":"spr_bomba","path":"sprites/spr_bomba/spr_bomba.yy",},},
     {"id":{"name":"spr_brocolis","path":"sprites/spr_brocolis/spr_brocolis.yy",},},
     {"id":{"name":"spr_cachorro_quente","path":"sprites/spr_cachorro_quente/spr_cachorro_quente.yy",},},
+    {"id":{"name":"spr_efeito_coleta","path":"sprites/spr_efeito_coleta/spr_efeito_coleta.yy",},},
     {"id":{"name":"spr_fundo","path":"sprites/spr_fundo/spr_fundo.yy",},},
     {"id":{"name":"spr_pudim","path":"sprites/spr_pudim/spr_pudim.yy",},},
     {"id":{"name":"spr_sorvete","path":"sprites/spr_sorvete/spr_sorvete.yy",},},

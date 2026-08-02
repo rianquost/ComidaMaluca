@@ -6,7 +6,12 @@ if (_numero > 0)
 {
 	for(var i = 0; i < _numero; i++)
 	{
-		instance_destroy(_lista_comida[| i]);	
+		instancia = _lista_comida[| i];
+		instancia.sprite_index = spr_efeito_coleta;	
+		if(instancia.image_index >= instancia.image_number - 1 and instancia.sprite_index = spr_efeito_coleta)
+		{
+			instance_destroy(instancia);	
+		}
 		global.pontos += 1;
 	}
 }
