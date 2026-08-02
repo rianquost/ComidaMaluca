@@ -48,6 +48,7 @@
     {"id":{"name":"rm_jogo","path":"rooms/rm_jogo/rm_jogo.yy",},},
     {"id":{"name":"rm_teste","path":"rooms/rm_teste/rm_teste.yy",},},
     {"id":{"name":"scr_global","path":"scripts/scr_global/scr_global.yy",},},
+    {"id":{"name":"spr_bloco_divisor","path":"sprites/spr_bloco_divisor/spr_bloco_divisor.yy",},},
     {"id":{"name":"spr_bomba","path":"sprites/spr_bomba/spr_bomba.yy",},},
     {"id":{"name":"spr_brocolis","path":"sprites/spr_brocolis/spr_brocolis.yy",},},
     {"id":{"name":"spr_cachorro_quente","path":"sprites/spr_cachorro_quente/spr_cachorro_quente.yy",},},

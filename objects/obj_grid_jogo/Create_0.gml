@@ -45,12 +45,12 @@ for (i = 1; i <= _linhas; i++)
 				_objeto = obj_x_salada
 			}		
 		}
-		else if (_chance >= 0.40 and _chance < 0.95)
+		else if (_chance >= 0.40 and _chance < 0.90)
 		{
 			_spawnar = false;	
 		}
 		//Brócolis
-		else if (_chance >= 0.95 and _chance < 0.98 and global.tem_bomba) {
+		else if (_chance >= 0.90 and _chance < 0.98 and global.tem_bomba) {
 				_objeto = obj_bomba
 		}
 		else

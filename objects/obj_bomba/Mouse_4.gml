@@ -7,13 +7,21 @@ if (_numero > 0)
 	for(var i = 0; i < _numero; i++)
 	{
 		instancia = _lista_comida[| i];
+		if(instancia.object_index == obj_brocolis) {
+			global.pontos += 5;
+		}
+		else
+		{
+			global.pontos += 1;
+		}
 		instancia.sprite_index = spr_efeito_coleta;	
 		if(instancia.image_index >= instancia.image_number - 1 and instancia.sprite_index = spr_efeito_coleta)
 		{
 			instance_destroy(instancia);	
 		}
-		global.pontos += 1;
 	}
 }
 ds_list_destroy(_lista_comida);
-instance_destroy();
+sprite_index = spr_efeito_coleta;
+image_index = 0;
+image_speed = 1;
