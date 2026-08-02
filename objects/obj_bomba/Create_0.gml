@@ -3,6 +3,8 @@ explodiu = false;
 
 function explosaoConjunta(instancia)
 {
+	
+	//Verifico se a bomba explodiu, caso sim dou um return para continuar vasculhando a lista, caso não sigo o código da explosão.
 	if(instancia.explodiu)
 	{
 		return;	
@@ -22,14 +24,21 @@ function explosaoConjunta(instancia)
 		{
 			var alvo = _lista_comida[| i];
 			if(alvo.object_index == obj_brocolis) {
-				global.pontos += 5;
+				if(!alvo.coletado) {
+					alvo.coletado = true;
+					global.pontos += 5;
+				}
 			}
 			else if(alvo.object_index == obj_bomba){
 				explosaoConjunta(alvo);	
 			}
 			else
 			{
-				global.pontos += 1;
+				if(!alvo.coletado)
+				{
+					alvo.coletado = true;
+					global.pontos += 1;		
+				}
 			}
 			alvo.sprite_index = spr_efeito_coleta;	
 			if(alvo.image_index >= alvo.image_number - 1 and alvo.sprite_index == spr_efeito_coleta)
