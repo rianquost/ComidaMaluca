@@ -1,6 +1,9 @@
 if (sprite_index != spr_efeito_coleta) {
 	global.pontos += 5;	
 }
+
+audio_play_sound(snd_coleta, 1, 0);
+
 sprite_index = spr_efeito_coleta;
 
 image_index = 0;
