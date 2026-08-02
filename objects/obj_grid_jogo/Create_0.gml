@@ -5,7 +5,7 @@ var _largura = 16;
 var _objeto = obj_brocolis;
 var _x_grid = 0;
 var _y_grid = 0;
-
+var _spawnar = true;
 // Criando a grid com 10 linhas e 10 colunas de 16x16
 
 for (i = 1; i <= _linhas; i++)
@@ -21,7 +21,7 @@ for (i = 1; i <= _linhas; i++)
 		var _objeto_escolhido = choose(0, 1);
 		
 		//Doces
-		if (_chance <= 0.50)
+		if (_chance <= 0.20)
 		{
 			if(_objeto_escolhido = 0)
 			{
@@ -34,7 +34,7 @@ for (i = 1; i <= _linhas; i++)
 		}
 		
 		//Salgados
-		else if (_chance > 0.50 and _chance <= 0.95)
+		else if (_chance > 0.20 and _chance < 0.40)
 		{
 			if(_objeto_escolhido = 0)
 			{
@@ -45,12 +45,24 @@ for (i = 1; i <= _linhas; i++)
 				_objeto = obj_x_salada
 			}		
 		}
+		else if (_chance >= 0.40 and _chance < 0.95)
+		{
+			_spawnar = false;	
+		}
 		//Brócolis
+		else if (_chance >= 0.95 and _chance < 0.98 and global.tem_bomba) {
+				_objeto = obj_bomba
+		}
 		else
 		{
 			_objeto = obj_brocolis;	
 		}
 		
-		instance_create_layer(_x_grid, _y_grid, "Instances", _objeto);
+		
+		if(_spawnar and global.quantidade_comida > 0) {
+			instance_create_layer(_x_grid, _y_grid, "Instances", _objeto);	
+			global.quantidade_comida -= 1;
+		}
+		_spawnar = true;
 	}
 }
