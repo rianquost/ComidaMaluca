@@ -1,5 +1,5 @@
 global.pontos = 0;
-global.quantidade_comida = 30;
+global.quantidade_comida = 60;
 global.restart = false;
 
 // Upgrades
