@@ -5,3 +5,4 @@ global.restart = false;
 // Upgrades
 
 global.tem_bomba = true;
+global.tem_fogo = true;

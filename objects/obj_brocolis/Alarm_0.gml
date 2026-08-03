@@ -1,6 +1,15 @@
-for(i = 0; i > -45; i--)
+randomise();
+var _distancia = random_range(0, 1)
+
+if (y > ystart + 1)
 {
-	image_angle += i;	
-}	
+	dir = -_distancia;
+}
+else if (y < ystart - 1)
+{
+	dir = _distancia;	
+}
+
+y += dir;
 
 alarm[0] = 10;
