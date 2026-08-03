@@ -16,7 +16,7 @@ function explosaoConjunta(instancia)
 	
 	var _comidas = [obj_brocolis, obj_cachorro_quente, obj_x_salada, obj_pudim, obj_sorvete, obj_bomba];
 	var _lista_comida = ds_list_create();
-	var _numero = collision_circle_list(instancia.x, instancia.y, 32, _comidas, false, true, _lista_comida, false);
+	var _numero = collision_circle_list(instancia.x, instancia.y, 16, _comidas, false, true, _lista_comida, false);
 
 	if (_numero > 0)
 	{
@@ -48,10 +48,8 @@ function explosaoConjunta(instancia)
 		}
 	}
 	ds_list_destroy(_lista_comida);
-	if(!audio_is_playing(snd_explosao))
-	{
-		audio_play_sound(snd_explosao, 1, 0);	
-	}
+
+	audio_play_sound(snd_explosao, 1, 0);	
 	sprite_index = spr_efeito_coleta;
 	image_index = 0;
 	image_speed = 1;	

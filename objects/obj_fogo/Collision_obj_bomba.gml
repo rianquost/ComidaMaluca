@@ -1,0 +1,1 @@
+obj_bomba.explosaoConjunta(other);

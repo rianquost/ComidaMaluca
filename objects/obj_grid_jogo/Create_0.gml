@@ -50,8 +50,11 @@ for (i = 1; i <= _linhas; i++)
 			_spawnar = false;	
 		}
 		//Brócolis
-		else if (_chance >= 0.80 and _chance < 0.98 and global.tem_bomba) {
+		else if (_chance >= 0.80 and _chance < 0.90 and global.tem_bomba) {
 				_objeto = obj_bomba
+		}
+		else if(_chance >= 0.90 and _chance < 0.95) {
+			_objeto = obj_fogo;
 		}
 		else
 		{
