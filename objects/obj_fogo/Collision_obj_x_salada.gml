@@ -1,4 +1,5 @@
 other.sprite_index = spr_efeito_coleta;
+other.pressionado = true;
 if(!other.coletado)
 {
 	other.coletado = true;	
